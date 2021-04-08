@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "docker:build": "docker build -t node-docker .",
-    "docker:run": "docker run -p 3000:8080 -d node-docker",
+    "docker:run": "npm run docker:stop; npm run docker:build && docker run -p 3000:8080 -d node-docker",
     "docker:stop": "docker stop `docker ps -q --filter ancestor=node-docker)`"
   },
   "repository": {
