@@ -1,0 +1,26 @@
+{
+  "name": "node-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docker:build": "docker build -t node-docker .",
+    "docker:run": "docker run -p 3000:8080 -d node-docker",
+    "docker:stop": "docker stop `docker ps -q --filter ancestor=node-docker)`"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonppg/node-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonppg/node-docker/issues"
+  },
+  "homepage": "https://github.com/simonppg/node-docker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
