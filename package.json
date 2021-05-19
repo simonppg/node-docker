@@ -21,5 +21,8 @@
   "homepage": "https://github.com/simonppg/node-docker#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prisma": "^2.23.0"
   }
 }
