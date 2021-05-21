@@ -20,7 +20,7 @@ COPY . .
 EXPOSE 8080
 
 # Run the image as a non-root user
-RUN adduser -D user
+RUN adduser --disabled-login user
 USER user
 
 CMD [ "node", "index.js" ]
